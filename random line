@@ -1,0 +1,30 @@
+void setup()
+{
+  size(500,500);
+  background(0);
+}
+void draw()
+{
+  background(0);
+ stroke(255);
+int lx=0;
+int my=MouseY;
+
+while (lx<300)
+{
+  stroke(0);
+  line(lx,500,lx,0);
+  stroke(255);
+
+  line(lx,500,lx,random(my));
+  if( lx<500)
+  {
+    lx=lx+20;
+  }
+  else
+  {
+    lx=0;
+  }
+
+}
+}
