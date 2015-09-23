@@ -1,0 +1,22 @@
+float cd=0;
+while (lx<450)
+{ 
+  
+  ly=50;
+   while(ly<450)
+   { 
+     noStroke();
+     colorMode(HSB);
+     
+     cd=cd+10;
+     if (cd>360)
+     { 
+       cd=0;
+     }   
+  fill(cd,255,255);
+
+     ellipse(lx,ly,20,20); 
+     ly=ly+20;
+   }
+  lx=lx+20; 
+}
